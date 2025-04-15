@@ -1,25 +1,30 @@
 # Sales Analysis Report
 
-## Overview
+### Overview/Context:
+This project conducts a comprehensive sales analysis for an e-store, focusing on identifying sales opportunities, optimizing inventory, and developing effective marketing strategies to enhance operational efficiency. The analysis was fully performed in Power BI, with Canva used for UI/UX design of the dashboard. An interactive Power BI dashboard was created to present the findings
+ [Link](https://app.powerbi.com/view?r=eyJrIjoiMzc1YzgzZTItM2QzYy00M2FiLTk0YzMtNzQwZTVhMDJhNmMwIiwidCI6IjAzNWEyYzY4LTc2YjQtNGViYS1hMTVhLWNiYmNhOTY4NjhjZCJ9)
 
-This repository contains a comprehensive sales analysis conducted using Power BI and Canva for UI/UX design. The analysis aims to identify sales opportunities, optimize inventory, and develop effective marketing strategies to enhance the operational efficiency of the e-store. 
+### Dataset
 
-Here is the link to the interactive dashboard : [Link](https://app.powerbi.com/view?r=eyJrIjoiMzc1YzgzZTItM2QzYy00M2FiLTk0YzMtNzQwZTVhMDJhNmMwIiwidCI6IjAzNWEyYzY4LTc2YjQtNGViYS1hMTVhLWNiYmNhOTY4NjhjZCJ9)
+- The dataset includes e-store transaction records with features such as Order Date, Price Each, Quantity Ordered, Address, and product details. It covers sales activities across eight states in 2019, with total sales of $34 million and 208,812 products sold.
 
-## Data Preparation
+### Data Preprocessing:
+- Data cleaning was initially performed using Python’s pandas library, followed by further processing in Power BI’s Power Query. Steps included:  
+ Renaming columns for clarity: “Price Each” to “Unit Price” and “Quantity Ordered” to “Quantity Sold.”  
 
-1. **Dataset Cleaning**: The initial step involved cleaning the dataset using Python. 
-   - Renamed columns for clarity:
-     - "Price Each" was changed to "Unit Price."
-     - "Quantity Ordered" was changed to "Quantity Sold."
-   - Engineered additional features:
-     - **Sales Amount**: Calculated as \( \text{Sales Amount} = \text{Unit Price} \times \text{Quantity Sold} \).
-     - Extracted information from the address to derive **State** and **City**.
-     - Extracted **Time** from the **Order Date**.
+- Handling missing values, removing duplicates, and standardizing date formats to ensure data consistency.
 
-## Analysis Scope
+### Business Questions:  
+- What are the total sales and products sold in 2019?  
 
-The analysis encompasses both regional and product insights, focusing on uncovering trends in sales, order patterns, and peak purchasing times.
+- Which products are top-selling and most in-demand, and what are their sales contributions?  
+
+- How do sales vary by month, hour, and geographic location?  
+
+- What are the peak purchasing times, and how do unit prices impact sales volumes?  
+
+- How can the e-store optimize operations and marketing to drive growth?
+
 
 ### Visuals
 
@@ -33,59 +38,32 @@ Sales
 
 Records
 
-![Records]()
+![Records](https://github.com/brenden-DS/2019_E_Store_Sales_Dashboard/blob/main/records%202019.PNG)
 
 ### Key Insights
 
-1. **Total Sales Performance**:
-   - The business generated a total sales revenue of **$34 million**, with **208,812 products sold**.
+- Sales Overview: The e-store generated $34 million in revenue, selling 208,812 products.  
 
-2. **Top-Selling Products**:
-   - The ten best-selling products, ranked by sales revenue, include:
-     1. MacBook Pro laptops: Approximately **$8 million** in sales.
-     2. iPhones: Contributed around **$4.7 million**.
-     3. ThinkPad laptops
-     4. Google phones
-     5. 27-inch 4K gaming monitors
-     6. 34-inch ultrawide monitors
-     7. Apple AirPods headphones
-     8. Flat-screen TVs
-     9. Bose SoundSport headphones
-     10. 27-inch FHD monitors
+- Top-Selling Products: MacBook Pro laptops led with $8 million, followed by iPhones at $4.7 million; other top products include ThinkPad laptops and Google phones.  
 
-3. **Monthly Sales Trends**:
-   - Monthly sales figures reveal fluctuations throughout the year, with a general upward trend:
-     - **Peak Sales**: December at just over **$4.5 million**.
-     - **Lowest Sales**: January at around **$1.8 million**.
-     - Notable dip in September, suggesting seasonal influences, followed by recovery starting in October.
+- In-Demand Products: High-volume, low-price items like AAA batteries, USB charging cables, and wired headphones topped demand.  
 
-4. **Geographic Distribution**:
-   - Orders were received from eight states: California (CA), Georgia (GA), Massachusetts (MA), Maine (ME), New York (NY), Oregon (OR), Texas (TX), and Washington (WA).
-   - **California** emerged as the leading state, contributing **$13,717,284.10 (39.8%)** of total sales, while **Maine** contributed the least at **$448,051.99 (1.3%)**.
+- Monthly Trends: Sales peaked in December at $4.5 million and dipped in January at $1.8 million, with a notable decline in September.  
 
-5. **Hourly Sales Patterns**:
-   - Sales steadily rise from **6 AM**, peaking between **10 AM and 7 PM**. 
-   - Analysis indicates that lower unit prices correlate with higher sales volumes and quantities sold.
+- Geographic Performance: California contributed 39.8% of sales ($13.7 million), while Maine lagged at 1.3% ($448K).  
 
-6. **In-Demand Products**:
-   - The top five most in-demand products include:
-     - AAA batteries (4-pack)
-     - AA batteries (4-pack)
-     - USB charging cables
-     - Lightning charging cables
-     - Wired headphones
-   - These products are purchased in high volumes due to their lower prices.
+- Hourly Patterns: Sales rose from 6 AM, peaking between 10 AM and 7 PM, with lower unit prices correlating with higher sales volumes.
 
-## Recommendations
+### Recommendations:  
+- Targeted Marketing: Launch campaigns in low-performing states like Maine to boost demand.  
 
-1. **Targeted Marketing Initiatives**: Implement marketing campaigns in states and cities with lower sales performance to stimulate demand.
+- Seasonal Offerings: Introduce seasonal products (e.g., heaters in winter) to align with customer needs and address monthly dips.  
 
-2. **Seasonal Product Offerings**: Introduce seasonal products, such as heaters during winter months, to align with customer needs.
+- Peak Hour Focus: Increase advertising during peak hours (10 AM–7 PM) to maximize engagement.  
 
-3. **Peak Hour Advertising**: Increase advertising efforts during peak web traffic hours (10 AM - 7 PM) to maximize reach and engagement.
+- Inventory Management: Ensure adequate stock of high-demand products like batteries and cables to prevent stockouts and lost sales.
 
-4. **Inventory Optimization**: Optimize inventory management to ensure adequate stock levels of high-demand products, minimizing the risk of stockouts and lost sales opportunities.
+### Conclusion:
+- This Power BI analysis reveals key sales trends, with California and high-demand products driving performance, while identifying opportunities in underperforming regions and time periods. The interactive 
+ dashboard provides an accessible overview for stakeholders, offering a clear path to optimize operations and drive e-store growth.
 
-## Conclusion
-
-This analysis provides valuable insights into sales performance, customer behavior, and market opportunities. By implementing the recommended strategies, the e-store can enhance its operational efficiency and drive further growth.
