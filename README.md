@@ -4,7 +4,7 @@
 
 This repository contains a comprehensive sales analysis conducted using Power BI and Canva for UI/UX design. The analysis aims to identify sales opportunities, optimize inventory, and develop effective marketing strategies to enhance the operational efficiency of the e-store. 
 
-Here is the link to the interactive dashboard : https://app.powerbi.com/view?r=eyJrIjoiMzc1YzgzZTItM2QzYy00M2FiLTk0YzMtNzQwZTVhMDJhNmMwIiwidCI6IjAzNWEyYzY4LTc2YjQtNGViYS1hMTVhLWNiYmNhOTY4NjhjZCJ9
+Here is the link to the interactive dashboard : [Link](https://app.powerbi.com/view?r=eyJrIjoiMzc1YzgzZTItM2QzYy00M2FiLTk0YzMtNzQwZTVhMDJhNmMwIiwidCI6IjAzNWEyYzY4LTc2YjQtNGViYS1hMTVhLWNiYmNhOTY4NjhjZCJ9)
 
 ## Data Preparation
 
@@ -20,6 +20,14 @@ Here is the link to the interactive dashboard : https://app.powerbi.com/view?r=e
 ## Analysis Scope
 
 The analysis encompasses both regional and product insights, focusing on uncovering trends in sales, order patterns, and peak purchasing times.
+
+### Visuals
+
+Overview
+
+![Overview](https://github.com/brenden-DS/2019_E_Store_Sales_Dashboard/blob/main/overview%202019.PNG)
+
+![]()
 
 ### Key Insights
 
