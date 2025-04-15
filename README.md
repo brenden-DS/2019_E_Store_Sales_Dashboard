@@ -27,7 +27,13 @@ Overview
 
 ![Overview](https://github.com/brenden-DS/2019_E_Store_Sales_Dashboard/blob/main/overview%202019.PNG)
 
-![]()
+Sales
+
+![Sales](https://github.com/brenden-DS/2019_E_Store_Sales_Dashboard/blob/main/product%202019.PNG)
+
+Records
+
+![Records]()
 
 ### Key Insights
 
